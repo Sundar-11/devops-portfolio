@@ -254,6 +254,64 @@ Deployed secure production web server on AWS EC2 with firewall rules and SSL con
 
 </div>
 
+<section class="container">
+
+<h2>Architecture Examples</h2>
+
+<div class="project">
+
+<h3>CI/CD Deployment Pipeline</h3>
+
+<p>
+Developer pushes code → CI/CD pipeline builds the application → Docker image is created → Application is deployed automatically to the server.
+</p>
+
+<pre>
+Developer
+   │
+   ▼
+Git Repository
+   │
+   ▼
+CI/CD Pipeline
+   │
+   ▼
+Docker Build
+   │
+   ▼
+Server Deployment
+</pre>
+
+</div>
+
+
+<div class="project">
+
+<h3>Secure Web Infrastructure</h3>
+
+<p>
+Production-ready web server architecture with reverse proxy and SSL encryption.
+</p>
+
+<pre>
+Internet
+   │
+   ▼
+Firewall
+   │
+   ▼
+Nginx Reverse Proxy
+   │
+   ▼
+Application Server
+   │
+   ▼
+Database
+</pre>
+
+</div>
+
+</section>
 
 
 </div>
