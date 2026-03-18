@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -10,6 +9,8 @@
 
 <style>
 
+/* RESET */
+
 *{
 margin:0;
 padding:0;
@@ -17,68 +18,59 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Segoe UI,Arial,sans-serif;
-background:#0f172a;
-color:#e5e7eb;
-line-height:1.6;
+font-family: 'Segoe UI', sans-serif;
+background:linear-gradient(to bottom,#020617,#0f172a);
+color:#e2e8f0;
 }
 
 /* HEADER */
 
 header{
-background:linear-gradient(135deg,#020617,#1e293b);
-padding:70px 20px;
 text-align:center;
-border-bottom:1px solid #1f2937;
+padding:60px 20px 40px;
 }
 
 header h1{
 font-size:42px;
 font-weight:700;
-margin-bottom:10px;
 }
 
 header p{
 color:#94a3b8;
-font-size:18px;
+margin-top:8px;
 }
 
-.hero-buttons{
+.buttons{
 margin-top:20px;
 }
 
-.hero-buttons a{
-display:inline-block;
-margin:8px;
+.buttons a{
+background:#2563eb;
 padding:10px 18px;
-background:#3b82f6;
-color:white;
-text-decoration:none;
+margin:5px;
 border-radius:6px;
+text-decoration:none;
+color:white;
 font-size:14px;
 }
 
-.hero-buttons a:hover{
-background:#2563eb;
+.buttons a:hover{
+background:#1d4ed8;
 }
 
-/* CONTAINER */
+/* SECTION */
 
-.container{
+.section{
 max-width:1100px;
 margin:auto;
-padding:60px 20px;
+padding:45px 20px;
 }
 
-/* HEADINGS */
-
-h2{
-font-size:28px;
-margin-bottom:25px;
-font-weight:700;
-color:white;
+.section h2{
+font-size:26px;
+margin-bottom:20px;
 border-left:4px solid #3b82f6;
-padding-left:12px;
+padding-left:10px;
 }
 
 /* SKILLS */
@@ -86,114 +78,88 @@ padding-left:12px;
 .skills span{
 display:inline-block;
 background:#1e293b;
-padding:8px 14px;
-margin:6px;
+padding:8px 12px;
+margin:5px;
 border-radius:20px;
-font-size:14px;
+font-size:13px;
 }
 
 /* GRID */
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:22px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:18px;
 }
 
-/* CARDS */
+/* CARD */
 
 .card{
-background:#111827;
-padding:24px;
+background:#0f172a;
+padding:20px;
 border-radius:8px;
-border:1px solid #1f2937;
-transition:0.25s;
+border:1px solid #1e293b;
+transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-5px);
 border-color:#3b82f6;
+transform:translateY(-5px);
 }
 
-/* PROJECT CARDS */
+/* PROJECT */
 
-.project-card{
-background:#111827;
-padding:22px;
+.project{
+background:#0f172a;
+padding:20px;
 border-radius:8px;
-border:1px solid #1f2937;
-margin-bottom:18px;
+border:1px solid #1e293b;
 }
 
-.project-card h3{
-margin-bottom:8px;
-}
-
-.project-card a{
+.project a{
 display:inline-block;
 margin-top:10px;
 color:#60a5fa;
 text-decoration:none;
-font-size:14px;
 }
 
-/* ARCHITECTURE */
+/* ARCHITECTURE FLOW */
 
-.arch{
-background:#020617;
-border:1px solid #1f2937;
-padding:20px;
+.flow{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:8px;
+margin-top:10px;
+}
+
+.box{
+background:#1e293b;
+padding:10px 15px;
 border-radius:6px;
-margin-top:10px;
-font-family:monospace;
-color:#cbd5f5;
+font-size:13px;
 }
 
-/* GITHUB GRID */
-
-.github-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:20px;
-}
-
-.repo{
-background:#111827;
-padding:20px;
-border-radius:8px;
-border:1px solid #1f2937;
-}
-
-.repo a{
-display:inline-block;
-margin-top:10px;
-color:#60a5fa;
-text-decoration:none;
+.arrow{
+font-size:18px;
+color:#3b82f6;
 }
 
 /* CONTACT */
 
 .contact{
-background:#020617;
-padding:50px 20px;
 text-align:center;
-border-top:1px solid #1f2937;
+padding:40px 20px;
+background:#020617;
+border-top:1px solid #1e293b;
 }
-
-.contact a{
-color:#60a5fa;
-text-decoration:none;
-}
-
-/* FOOTER */
 
 footer{
 text-align:center;
-padding:18px;
+padding:15px;
 background:#020617;
 color:#94a3b8;
-font-size:14px;
-border-top:1px solid #1f2937;
+font-size:13px;
 }
 
 </style>
@@ -202,61 +168,49 @@ border-top:1px solid #1f2937;
 
 <body>
 
-
 <header>
 
 <h1>Sundar M</h1>
+<p>DevOps Engineer • Linux Admin • Cloud Infrastructure</p>
 
-<p>DevOps Engineer • Linux Administrator • Infrastructure Specialist</p>
-
-<p>Building secure, automated and scalable infrastructure</p>
-
-<div class="hero-buttons">
-
+<div class="buttons">
 <a href="https://github.com/sundar-11">GitHub</a>
-
 <a href="https://www.linkedin.com/in/sundar-maharajan">LinkedIn</a>
-
 </div>
 
 </header>
 
 
-<div class="container">
+<div class="section">
 
 <h2>About Me</h2>
 
 <p>
-I am a DevOps and Infrastructure Engineer with over 4 years of experience managing production Linux servers, automating deployments, and building secure infrastructure environments. I specialize in open-source technologies, CI/CD pipelines, containerized deployments, and cloud infrastructure. My focus is on creating reliable systems that reduce manual work and improve deployment speed while maintaining strong security practices.
+DevOps Engineer with 4+ years of experience in Linux server management, CI/CD automation and cloud infrastructure. I specialize in building secure, scalable and automated deployment systems using open-source tools.
 </p>
 
 </div>
 
 
+<div class="section">
 
-<div class="container">
-
-<h2>Core Skills</h2>
+<h2>DevOps Tools</h2>
 
 <div class="skills">
 
-<span>Linux Administration</span>
-<span>Nginx / Apache</span>
-<span>CI/CD Pipelines</span>
-<span>Docker</span>
-<span>Git / GitHub</span>
-<span>Server Security</span>
-<span>Monitoring</span>
-<span>Automation</span>
-<span>Cloud Infrastructure</span>
+<span>🐧 Linux</span>
+<span>🌐 Nginx</span>
+<span>🐳 Docker</span>
+<span>⚙️ Jenkins</span>
+<span>🐙 GitHub</span>
+<span>☁️ AWS</span>
 
 </div>
 
 </div>
 
 
-
-<div class="container">
+<div class="section">
 
 <h2>Services</h2>
 
@@ -264,42 +218,22 @@ I am a DevOps and Infrastructure Engineer with over 4 years of experience managi
 
 <div class="card">
 <h3>Linux Server Setup</h3>
-<p>Production-ready Linux server installation, optimization and troubleshooting.</p>
+<p>Production server installation & optimization.</p>
 </div>
 
 <div class="card">
-<h3>Web Server Deployment</h3>
-<p>High performance Apache and Nginx web server deployments.</p>
+<h3>SSL Setup</h3>
+<p>HTTPS using Let's Encrypt.</p>
 </div>
 
 <div class="card">
-<h3>SSL Installation</h3>
-<p>Secure websites using Let's Encrypt with automated SSL renewal.</p>
-</div>
-
-<div class="card">
-<h3>Reverse Proxy</h3>
-<p>Host multiple applications behind Nginx or Apache reverse proxy.</p>
-</div>
-
-<div class="card">
-<h3>CI/CD Automation</h3>
-<p>Automated deployment pipelines using Jenkins and GitHub Actions.</p>
+<h3>CI/CD Pipeline</h3>
+<p>Automated deployments.</p>
 </div>
 
 <div class="card">
 <h3>Docker Deployment</h3>
-<p>Containerized applications using Docker and Docker Compose.</p>
-</div>
-
-<div class="card">
-<h3>Monitoring Setup</h3>
-<p>Prometheus and Grafana based monitoring with alerts.</p>
-</div>
-
-<div class="card">
-<h3>Security Hardening</h3>
-<p>Firewall configuration, Fail2Ban and Linux security improvements.</p>
+<p>Containerized applications.</p>
 </div>
 
 </div>
@@ -307,133 +241,53 @@ I am a DevOps and Infrastructure Engineer with over 4 years of experience managi
 </div>
 
 
+<div class="section">
 
-<div class="container">
+<h2>Projects</h2>
 
-<h2>DevOps Projects</h2>
-
-<div class="project-card">
-
+<div class="project">
 <h3>CI/CD Pipeline Automation</h3>
-
-<p>
-Automated application deployment pipeline using Jenkins integrated with Git repositories. The pipeline builds the application, creates deployment artifacts and deploys automatically to the server.
-</p>
-
+<p>Automated deployment using Jenkins and GitHub.</p>
+<a href="https://github.com/sundar-11">View Project →</a>
 </div>
 
-<div class="project-card">
+<br>
 
-<h3>Dockerized Web Application</h3>
-
-<p>
-Containerized a PHP web application using Docker and deployed it behind an Nginx reverse proxy with automated container management.
-</p>
-
-</div>
-
-<div class="project-card">
-
-<h3>AWS EC2 Production Web Server</h3>
-
-<p>
-Secure Linux web server deployed on AWS EC2 with firewall rules, HTTPS configuration and performance optimization.
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="container">
-
-<h2>Architecture Examples</h2>
-
-<div class="project-card">
-
-<h3>CI/CD Deployment Pipeline</h3>
-
-<div class="arch">
-
-Developer  
-↓  
-GitHub Repository  
-↓  
-CI/CD Pipeline  
-↓  
-Docker Build  
-↓  
-Server Deployment  
-
-</div>
-
-</div>
-
-<div class="project-card">
-
-<h3>Secure Web Infrastructure</h3>
-
-<div class="arch">
-
-Internet  
-↓  
-Firewall  
-↓  
-Nginx Reverse Proxy  
-↓  
-Application Server  
-↓  
-Database  
-
-</div>
-
-</div>
-
-</div>
-
-
-
-<div class="container">
-
-<h2>GitHub Projects</h2>
-
-<div class="github-grid">
-
-<div class="repo">
-
-<h3>CI/CD Pipeline</h3>
-
-<p>Jenkins based CI/CD pipeline automation project.</p>
-
-<a href="https://github.com/sundar-11/jenkins-cicd-pipeline">View Repository →</a>
-
-</div>
-
-<div class="repo">
-
+<div class="project">
 <h3>Docker Web Deployment</h3>
-
-<p>Docker container deployment with reverse proxy.</p>
-
-<a href="https://github.com/sundar-11/docker-web-deployment">View Repository →</a>
-
-</div>
-
-<div class="repo">
-
-<h3>Linux Server Setup</h3>
-
-<p>Production ready Linux server configuration guide.</p>
-
-<a href="https://github.com/sundar-11/linux-server-setup">View Repository →</a>
-
+<p>Containerized web app with reverse proxy.</p>
+<a href="https://github.com/sundar-11">View Project →</a>
 </div>
 
 </div>
 
+
+<div class="section">
+
+<h2>Architecture</h2>
+
+<div class="flow">
+
+<div class="box">Developer</div>
+<div class="arrow">→</div>
+
+<div class="box">GitHub</div>
+<div class="arrow">→</div>
+
+<div class="box">CI/CD</div>
+<div class="arrow">→</div>
+
+<div class="box">Docker</div>
+<div class="arrow">→</div>
+
+<div class="box">Server</div>
+<div class="arrow">→</div>
+
+<div class="box">Nginx</div>
+
 </div>
 
+</div>
 
 
 <div class="contact">
@@ -441,27 +295,15 @@ Database
 <h2>Contact</h2>
 
 <p>Email: sundar.maharajan1994@gmail.com</p>
-
 <p>Phone: +91 8015898668</p>
-
-<p>
-GitHub: <a href="https://github.com/sundar-11">github.com/sundar-11</a>
-</p>
-
-<p>
-LinkedIn: <a href="https://www.linkedin.com/in/sundar-maharajan">LinkedIn Profile</a>
-</p>
 
 </div>
 
-
-
 <footer>
 
-© 2026 Sundar M • DevOps Engineer Portfolio
+© 2026 Sundar M | DevOps Portfolio
 
 </footer>
-
 
 </body>
 </html>
