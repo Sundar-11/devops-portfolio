@@ -16,34 +16,35 @@ box-sizing:border-box;
 
 body{
 margin:0;
-font-family:Segoe UI,Arial,sans-serif;
-background:#f4f6fb;
-color:#1f2937;
+font-family:Segoe UI,Arial;
+background:#0f172a;
+color:#e2e8f0;
 line-height:1.6;
 }
 
 /* HEADER */
 
 header{
-background:#0f172a;
-color:white;
+background:#020617;
 text-align:center;
-padding:70px 20px;
+padding:80px 20px;
+border-bottom:1px solid #1e293b;
 }
 
 header h1{
-margin:0;
 font-size:42px;
+margin:0;
 font-weight:700;
+color:white;
 }
 
 header p{
-margin-top:10px;
-color:#cbd5f5;
+margin-top:12px;
+color:#94a3b8;
 font-size:18px;
 }
 
-/* SECTION */
+/* CONTAINER */
 
 .container{
 max-width:1100px;
@@ -51,81 +52,82 @@ margin:auto;
 padding:50px 20px;
 }
 
+/* SECTIONS */
+
 section{
-margin-bottom:50px;
+margin-bottom:55px;
 }
 
 h2{
 font-size:28px;
+margin-bottom:18px;
 font-weight:700;
-margin-bottom:20px;
-border-left:5px solid #2563eb;
+color:white;
+border-left:5px solid #3b82f6;
 padding-left:12px;
-}
-
-/* SERVICES GRID */
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:22px;
-}
-
-.card{
-background:white;
-padding:24px;
-border-radius:10px;
-box-shadow:0 6px 14px rgba(0,0,0,0.08);
-transition:0.25s;
-}
-
-.card:hover{
-transform:translateY(-6px);
-box-shadow:0 10px 18px rgba(0,0,0,0.12);
-}
-
-.card h3{
-margin-top:0;
 }
 
 /* SKILLS */
 
 .skills span{
 display:inline-block;
-background:#e5e7eb;
+background:#1e293b;
 padding:8px 14px;
 margin:6px;
 border-radius:20px;
 font-size:14px;
 }
 
-/* PROJECT CARDS */
+/* GRID */
 
-.project-grid{
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:20px;
 }
 
+/* CARD */
+
+.card{
+background:#1e293b;
+padding:24px;
+border-radius:10px;
+transition:0.25s;
+border:1px solid #334155;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#3b82f6;
+}
+
+.card h3{
+margin-top:0;
+color:white;
+}
+
+/* PROJECTS */
+
 .project{
-background:white;
+background:#1e293b;
 padding:22px;
 border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
+border:1px solid #334155;
 transition:0.25s;
 }
 
 .project:hover{
 transform:translateY(-5px);
+border-color:#3b82f6;
 }
 
 .project a{
 display:inline-block;
 margin-top:10px;
-text-decoration:none;
-color:white;
-background:#2563eb;
 padding:8px 14px;
+background:#3b82f6;
+color:white;
+text-decoration:none;
 border-radius:6px;
 font-size:14px;
 }
@@ -133,10 +135,10 @@ font-size:14px;
 /* ARCHITECTURE */
 
 .arch{
-background:white;
+background:#1e293b;
 padding:25px;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
+border:1px solid #334155;
 margin-bottom:25px;
 }
 
@@ -148,20 +150,24 @@ margin-top:15px;
 }
 
 .node{
-background:#1e293b;
-color:white;
-padding:10px 14px;
+background:#3b82f6;
+padding:8px 14px;
 border-radius:6px;
 font-size:13px;
+color:white;
 }
 
 /* CONTACT */
 
 .contact{
-background:#0f172a;
-color:white;
+background:#020617;
+padding:55px 20px;
 text-align:center;
-padding:50px 20px;
+border-top:1px solid #1e293b;
+}
+
+.contact h2{
+border:none;
 }
 
 .contact a{
@@ -173,10 +179,11 @@ text-decoration:none;
 
 footer{
 background:#020617;
-color:#94a3b8;
 text-align:center;
 padding:18px;
+color:#64748b;
 font-size:14px;
+border-top:1px solid #1e293b;
 }
 
 </style>
@@ -203,11 +210,11 @@ font-size:14px;
 <h2>About Me</h2>
 
 <p>
-I am a DevOps and Infrastructure Engineer with over 4 years of experience managing production Linux environments, deploying applications, and building automated infrastructure. I specialize in open-source technologies, CI/CD automation, containerized deployments, and secure production server setups.
+I am a DevOps and Infrastructure Engineer specializing in Linux systems, automation, and cloud infrastructure. I help businesses deploy secure, reliable, and scalable production environments using modern DevOps practices.
 </p>
 
 <p>
-My work focuses on improving deployment reliability, reducing manual operations, and creating scalable infrastructure using tools like Docker, Nginx, Git, and CI/CD pipelines.
+My expertise includes Linux administration, CI/CD pipeline implementation, Docker deployments, reverse proxy architecture, and automated infrastructure management.
 </p>
 
 </section>
@@ -220,11 +227,10 @@ My work focuses on improving deployment reliability, reducing manual operations,
 <div class="skills">
 
 <span>Linux Administration</span>
-<span>Nginx & Apache</span>
+<span>Nginx</span>
 <span>Docker</span>
 <span>CI/CD Pipelines</span>
-<span>Git & GitHub</span>
-<span>Server Security</span>
+<span>Git</span>
 <span>Monitoring</span>
 <span>Automation</span>
 <span>Cloud Infrastructure</span>
@@ -241,82 +247,48 @@ My work focuses on improving deployment reliability, reducing manual operations,
 <div class="grid">
 
 <div class="card">
-<h3>Linux Server Setup</h3>
-<p>Production Linux server installation, configuration, optimization and troubleshooting.</p>
+<h3>🐧 Linux Server Setup</h3>
+<p>Production Linux installation, optimization and troubleshooting.</p>
 </div>
 
 <div class="card">
-<h3>Web Server Deployment</h3>
-<p>Deploy Apache or Nginx with optimized configuration for high performance.</p>
+<h3>🌐 Web Server Deployment</h3>
+<p>High performance Nginx or Apache web server setup.</p>
 </div>
 
 <div class="card">
-<h3>SSL Installation</h3>
-<p>Secure websites using Let's Encrypt SSL certificates with automated renewal.</p>
+<h3>🔐 SSL Installation</h3>
+<p>Secure websites using Let's Encrypt SSL certificates.</p>
 </div>
 
 <div class="card">
-<h3>Reverse Proxy Setup</h3>
-<p>Configure Nginx reverse proxy to host multiple applications on one server.</p>
+<h3>⚙ CI/CD Pipeline Setup</h3>
+<p>Automate build and deployment pipelines using modern DevOps tools.</p>
 </div>
 
 <div class="card">
-<h3>CI/CD Pipeline Setup</h3>
-<p>Automate build and deployment pipelines using GitHub Actions or Jenkins.</p>
+<h3>🐳 Docker Deployment</h3>
+<p>Containerize applications using Docker and Docker Compose.</p>
 </div>
 
 <div class="card">
-<h3>Docker Deployment</h3>
-<p>Containerize applications and deploy using Docker and Docker Compose.</p>
+<h3>🔁 Reverse Proxy Setup</h3>
+<p>Configure Nginx reverse proxy for scalable application hosting.</p>
 </div>
 
 <div class="card">
-<h3>Database Setup</h3>
-<p>Install and configure MySQL or PostgreSQL with backups and tuning.</p>
+<h3>📊 Monitoring Setup</h3>
+<p>Implement monitoring solutions using Prometheus and Grafana.</p>
 </div>
 
 <div class="card">
-<h3>Monitoring Setup</h3>
-<p>Implement monitoring with Prometheus and Grafana dashboards.</p>
+<h3>🛡 Security Hardening</h3>
+<p>Firewall setup, Fail2Ban protection and Linux security configuration.</p>
 </div>
 
 <div class="card">
-<h3>Security Hardening</h3>
-<p>Improve Linux security using firewall rules, Fail2Ban and system hardening.</p>
-</div>
-
-<div class="card">
-<h3>Cloud Deployment</h3>
-<p>Deploy infrastructure on cloud platforms like AWS or VPS servers.</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section>
-
-<h2>Featured DevOps Projects</h2>
-
-<div class="project-grid">
-
-<div class="project">
-<h3>CI/CD Automation Pipeline</h3>
-<p>Automated application deployment pipeline integrating Git repository triggers and container deployment.</p>
-<a href="https://github.com/sundar-11/jenkins-cicd-pipeline">View on GitHub</a>
-</div>
-
-<div class="project">
-<h3>Dockerized Web Deployment</h3>
-<p>Containerized PHP web application deployed using Docker with reverse proxy architecture.</p>
-<a href="https://github.com/sundar-11/docker-web-deployment">View on GitHub</a>
-</div>
-
-<div class="project">
-<h3>Linux Production Server Setup</h3>
-<p>Secure production Linux server with firewall rules, SSL and optimized web stack.</p>
-<a href="https://github.com/sundar-11/linux-server-setup">View on GitHub</a>
+<h3>☁ Cloud Deployment</h3>
+<p>Deploy applications on VPS or cloud infrastructure platforms.</p>
 </div>
 
 </div>
@@ -335,8 +307,8 @@ My work focuses on improving deployment reliability, reducing manual operations,
 <div class="diagram">
 
 <div class="node">Developer</div>
-<div class="node">Git Repository</div>
-<div class="node">CI/CD Pipeline</div>
+<div class="node">GitHub</div>
+<div class="node">CI Pipeline</div>
 <div class="node">Docker Build</div>
 <div class="node">Server Deployment</div>
 
@@ -353,9 +325,87 @@ My work focuses on improving deployment reliability, reducing manual operations,
 
 <div class="node">Internet</div>
 <div class="node">Firewall</div>
-<div class="node">Nginx Reverse Proxy</div>
-<div class="node">Application Server</div>
+<div class="node">Nginx</div>
+<div class="node">Application</div>
 <div class="node">Database</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>DevOps Templates</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Docker Web Stack</h3>
+<p>Production ready Docker Compose template with Nginx and database.</p>
+<a href="https://github.com/sundar-11">View Template</a>
+</div>
+
+<div class="card">
+<h3>CI/CD Pipeline Template</h3>
+<p>Automated pipeline for build and deployment using Git workflows.</p>
+<a href="https://github.com/sundar-11">View Template</a>
+</div>
+
+<div class="card">
+<h3>Secure Linux Server Setup</h3>
+<p>Automation scripts for firewall, SSH hardening and Fail2Ban.</p>
+<a href="https://github.com/sundar-11">View Template</a>
+</div>
+
+<div class="card">
+<h3>Nginx Reverse Proxy</h3>
+<p>Configuration template to host multiple applications securely.</p>
+<a href="https://github.com/sundar-11">View Template</a>
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Featured Projects</h2>
+
+<div class="grid">
+
+<div class="project">
+
+<h3>CI/CD Automation Pipeline</h3>
+
+<p>Automated deployment pipeline integrating Git repository triggers and container deployment.</p>
+
+<a href="https://github.com/sundar-11">View Project</a>
+
+</div>
+
+
+<div class="project">
+
+<h3>Dockerized Web Deployment</h3>
+
+<p>Containerized application deployment using Docker and reverse proxy architecture.</p>
+
+<a href="https://github.com/sundar-11">View Project</a>
+
+</div>
+
+
+<div class="project">
+
+<h3>Linux Production Server</h3>
+
+<p>Secure production server configuration with firewall rules and SSL.</p>
+
+<a href="https://github.com/sundar-11">View Project</a>
 
 </div>
 
