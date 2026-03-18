@@ -28,7 +28,7 @@ header{
 background:linear-gradient(135deg,#020617,#0f172a);
 color:white;
 text-align:center;
-padding:70px 20px;
+padding:50px 20px; /* reduced from 70px */
 border-bottom:1px solid #1e293b;
 }
 
@@ -102,6 +102,14 @@ margin:6px;
 border-radius:20px;
 font-size:14px;
 color:#e2e8f0;
+transition:0.2s;
+cursor:default;
+}
+
+.skills span:hover{
+background:#2563eb;
+color:white;
+transform:translateY(-2px);
 }
 
 /* PROJECT CARDS */
@@ -155,6 +163,12 @@ display:flex;
 flex-wrap:wrap;
 gap:10px;
 margin-top:15px;
+align-items:center;
+}
+
+.arrow{
+color:#3b82f6;
+font-size:18px;
 }
 
 .node{
@@ -187,8 +201,8 @@ footer{
 background:#020617;
 color:#94a3b8;
 text-align:center;
-padding:18px;
-font-size:14px;
+padding:12px; /* reduced */
+font-size:13px;
 border-top:1px solid #1e293b;
 }
 
@@ -254,52 +268,52 @@ My work focuses on improving deployment reliability, reducing manual operations,
 <div class="grid">
 
 <div class="card">
-<h3>Linux Server Setup</h3>
+<h3>🐧 Linux Server Setup</h3>
 <p>Production Linux server installation, configuration, optimization and troubleshooting.</p>
 </div>
 
 <div class="card">
-<h3>Web Server Deployment</h3>
+<h3>🌐 Web Server Deployment</h3>
 <p>Deploy Apache or Nginx with optimized configuration for high performance.</p>
 </div>
 
 <div class="card">
-<h3>SSL Installation</h3>
+<h3>🔒 SSL Installation</h3>
 <p>Secure websites using Let's Encrypt SSL certificates with automated renewal.</p>
 </div>
 
 <div class="card">
-<h3>Reverse Proxy Setup</h3>
+<h3>🔁 Reverse Proxy Setup</h3>
 <p>Configure Nginx reverse proxy to host multiple applications on one server.</p>
 </div>
 
 <div class="card">
-<h3>CI/CD Pipeline Setup</h3>
+<h3>⚙️ CI/CD Pipeline Setup</h3>
 <p>Automate build and deployment pipelines using GitHub Actions or Jenkins.</p>
 </div>
 
 <div class="card">
-<h3>Docker Deployment</h3>
+<h3>🐳 Docker Deployment</h3>
 <p>Containerize applications and deploy using Docker and Docker Compose.</p>
 </div>
 
 <div class="card">
-<h3>Database Setup</h3>
+<h3>🗄️ Database Setup</h3>
 <p>Install and configure MySQL or PostgreSQL with backups and tuning.</p>
 </div>
 
 <div class="card">
-<h3>Monitoring Setup</h3>
+<h3>📊 Monitoring Setup</h3>
 <p>Implement monitoring with Prometheus and Grafana dashboards.</p>
 </div>
 
 <div class="card">
-<h3>Security Hardening</h3>
+<h3>🛡️ Security Hardening</h3>
 <p>Improve Linux security using firewall rules, Fail2Ban and system hardening.</p>
 </div>
 
 <div class="card">
-<h3>Cloud Deployment</h3>
+<h3>☁️ Cloud Deployment</h3>
 <p>Deploy infrastructure on cloud platforms like AWS or VPS servers.</p>
 </div>
 
@@ -348,9 +362,17 @@ My work focuses on improving deployment reliability, reducing manual operations,
 <div class="diagram">
 
 <div class="node">Developer</div>
+<div class="arrow">→</div>
+
 <div class="node">Git Repository</div>
+<div class="arrow">→</div>
+
 <div class="node">CI/CD Pipeline</div>
+<div class="arrow">→</div>
+
 <div class="node">Docker Build</div>
+<div class="arrow">→</div>
+
 <div class="node">Server Deployment</div>
 
 </div>
@@ -365,9 +387,17 @@ My work focuses on improving deployment reliability, reducing manual operations,
 <div class="diagram">
 
 <div class="node">Internet</div>
+<div class="arrow">→</div>
+
 <div class="node">Firewall</div>
+<div class="arrow">→</div>
+
 <div class="node">Nginx Reverse Proxy</div>
+<div class="arrow">→</div>
+
 <div class="node">Application Server</div>
+<div class="arrow">→</div>
+
 <div class="node">Database</div>
 
 </div>
